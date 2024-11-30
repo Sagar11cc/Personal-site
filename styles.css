@@ -1,0 +1,65 @@
+/* Custom styles */
+.skill-card {
+    @apply bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md text-center transition-all duration-300;
+}
+
+.project-card {
+    @apply bg-white/90 backdrop-blur-sm rounded-lg shadow-md overflow-hidden transition-all duration-300;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Parallax effect */
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+/* Profile image hover effect */
+.profile-image {
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+/* Section backgrounds */
+section {
+    position: relative;
+}
+
+section > .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Skill card hover effect */
+.skill-card:hover {
+    @apply shadow-xl transform -translate-y-1;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+    @apply shadow-xl transform -translate-y-1;
+} 

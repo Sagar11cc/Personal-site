@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-gray-800">Portfolio</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" onclick="toggleMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed w-full bg-white shadow-lg z-40 top-16">
+        <div class="container mx-auto px-4 py-4 space-y-4">
+            <a href="#home" class="block text-gray-600 hover:text-gray-900 py-2">Home</a>
+            <a href="#about" class="block text-gray-600 hover:text-gray-900 py-2">About</a>
+            <a href="#skills" class="block text-gray-600 hover:text-gray-900 py-2">Skills</a>
+            <a href="#projects" class="block text-gray-600 hover:text-gray-900 py-2">Projects</a>
+            <a href="#contact" class="block text-gray-600 hover:text-gray-900 py-2">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 min-h-screen flex items-center relative bg-fixed bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80');">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="mb-8">
+                    <img src="profile.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto border-4 border-white shadow-xl object-cover">
+                </div>
+                <h1 class="text-5xl font-bold text-white mb-4">Full Stack Developer</h1>
+                <p class="text-xl text-gray-200 mb-8">Turning ideas into reality through code</p>
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-fixed bg-cover bg-center opacity-5" style="background-image: url('https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto text-gray-600">
+                <p class="mb-4">
+                    I am a passionate Full Stack Developer with expertise in both front-end and back-end development.
+                    With a strong foundation in multiple programming languages and frameworks, I create efficient and
+                    scalable solutions for complex problems.
+                </p>
+                <p>
+                    My experience spans across web development, mobile applications, and database management,
+                    allowing me to build complete, end-to-end solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 relative">
+        <div class="absolute inset-0 bg-fixed bg-cover bg-center opacity-5" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="skill-card">
+                    <i class="fab fa-php text-4xl mb-2"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java text-4xl mb-2"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js text-4xl mb-2"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3 text-4xl mb-2"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5 text-4xl mb-2"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-android text-4xl mb-2"></i>
+                    <span>Android</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-windows text-4xl mb-2"></i>
+                    <span>.NET</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code text-4xl mb-2"></i>
+                    <span>C/C#</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database text-4xl mb-2"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-laravel text-4xl mb-2"></i>
+                    <span>Laravel</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react text-4xl mb-2"></i>
+                    <span>React JS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-figma text-4xl mb-2"></i>
+                    <span>Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white relative">
+        <div class="absolute inset-0 bg-fixed bg-cover bg-center opacity-5" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.0&auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Chess Project -->
+                <div class="project-card group flex flex-col h-full">
+                    <div class="relative overflow-hidden">
+                        <img src="e-commerce.png" alt="Chess Project" class="w-full h-48 object-cover rounded-t transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://github.com/Sagar11cc/e-commerce-app" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">E-commerce website with paypal</h3>
+                        <p class="text-gray-600 flex-grow">E-commerce website with paypal integration </p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">HTML5</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">CSS3</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">PHP</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BCA onle notes -->
+                <div class="project-card group flex flex-col h-full">
+                    <div class="relative overflow-hidden">
+                        <img src="bca_notes.png" alt="BCA Online Notes" class="w-full h-48 object-cover rounded-t transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://github.com/Sagar11cc/BCA_Notes" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Musical Instrument Portal</h3>
+                        <p class="text-gray-600 flex-grow">E-commerce platform for musical instruments and accessories. Features renting and selling of instruments along with a reccommedation system.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Core PHP</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">HTML5</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">CSS3</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IMAGE STEGNOGRAPHY USING LSB -->
+                <div class="project-card group flex flex-col h-full">
+                    <div class="relative overflow-hidden">
+                        <img src="IMAGE STEGNOGRAPHY USING LSB.png" alt="ORB Food Project" class="w-full h-48 object-cover rounded-t transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://github.com/Sagar11cc/Image-steganography" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">IMAGE STEGNOGRAPHY USING LSB</h3>
+                        <p class="text-gray-600 flex-grow"> image steganography application for hiding data in an image using 
+                            LSB encoding and decoding algorithm.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Java Swing</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+         
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Finance Project -->
+                <!-- <div class="project-card group flex flex-col h-full">
+                    <div class="relative overflow-hidden">
+                        <img src="finance.png" alt="E-Finance Project" class="w-full h-48 object-cover rounded-t transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://github.com/NirajXtha/Finance" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">E-Finance</h3>
+                        <p class="text-gray-600 flex-grow">Financial management system with budgeting and investment tracking features.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">PHP</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">HTML5</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">CSS3</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Bootstrap</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- E-Pharm Project -->
+                <!-- <div class="project-card group flex flex-col h-full">
+                    <div class="relative overflow-hidden">
+                        <img src="pharmacy.png" alt="E-Pharm Project" class="w-full h-48 object-cover rounded-t transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="https://github.com/NirajXtha/Project" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold mb-2">E-Pharm</h3>
+                        <p class="text-gray-600 flex-grow">Pharmacy management system with inventory tracking and prescription handling.</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">PHP</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Laravel</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">MySQL</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">HTML5</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">CSS3</span>
+                            <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+            <div class="text-center">
+                <a href="mailto:sagar11cc@gmail.com" 
+                   class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Get in Touch with me
+                </a>
+                <p class="mt-6 text-gray-600">I'll get back to you as soon as possible!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-8">
+                <a href="https://github.com/Sagar11cc" target="_blank" class="hover:text-gray-400 transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sagar-cc-6982b9199/" target="_blank" class="hover:text-gray-400 transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <!-- <a href="https://www.facebook.com/niraj.shrestha.1865/" target="_blank" class="hover:text-gray-400 transition-colors">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@nepalisharingan2827" target="_blank" class="hover:text-gray-400 transition-colors">
+                    <i class="fab fa-youtube text-xl"></i>
+                </a> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this before closing body tag -->
+    <script src="script.js"></script>
+</body>
+</html> 
